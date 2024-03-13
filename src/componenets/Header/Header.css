@@ -1,0 +1,43 @@
+/* header {
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.3rem;
+} */
+
+#headerLogo,
+#hamburgerContainer {
+    height: 4rem;
+    width: 4rem;
+
+}
+
+#headerLogo {
+    background-image: url('../../Assets/Images/Branding/BBE_Title_No_BG.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#headerTitle {
+    height: 100%;
+    overflow-y: hidden;
+
+}
+
+#hamburgerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#hamburgerInner {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5% 0 5%;
+}

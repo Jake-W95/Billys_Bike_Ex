@@ -1,0 +1,94 @@
+                    /* General Page  */
+#serviceButtonContainer {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    grid-gap: .5em;
+    padding: 0.5em;
+    width: 85%;
+    height: 30vh;
+    
+}
+#serviceButtonContainer .serviceButton {
+    height: 100%;
+    position: relative;
+}
+#serviceButtonContainer button {
+    /* font-size: large; */
+    height: 100%;
+    width: 100%;
+    /* font-weight: bold; */
+}
+#serviceButtonContainer .serviceButtonOverlay {
+    position: absolute;
+    top: 0;
+    display: grid;
+    place-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 100%;
+}
+#serviceButtonContainer .serviceButtonOverlay p {
+margin: auto;
+}
+
+
+
+#IGLogo {
+    font-size: 200%;
+}
+#serviceText {
+    font-size: 150%;
+}
+
+                    /* Service Cards */
+.pricingCard {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+}
+.pricingCard h2 {
+    font-size: 175%;
+    color: bbeo;
+}
+.bespokeCard {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+}
+.serviceListItem{
+    font-size: larger;
+    text-align: left;
+}
+.servicePrice{
+    font-size: 150%;
+}
+#PNP{
+    text-align: center;
+}
+#bespokeText {
+    font-size: 170%;
+    margin: 2rem;
+}
+
+@media screen and (max-width:1000px){
+.pricingCard{
+    height: 50%;
+    width: 75%
+}}
+
+@media screen and (max-width:500px) {
+    .pricingCard{
+        width: 85%;
+        height: 75%;
+    } 
+    .bespokeCard{
+        max-width: 50%;
+        height: auto;
+    }
+    #serviceText{
+        font-size: larger;
+    }
+    #bespokeText {
+        font-size: large;
+    }
+}

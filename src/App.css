@@ -1,0 +1,92 @@
+:root {
+  --honeydew: #ECFFF8;
+  --MSBlue: #7678ED;
+  --PersianGreen: #00A896;
+  --Jet: #34312D;
+}
+
+.App {
+  /* position: relative; */
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop:always;
+  scroll-padding-top: 8vh;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main {
+  background-color: var(--honeydew);
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+
+}
+section
+article {
+  padding: 0 1.5em;
+}
+
+header,
+footer {
+  display: flex;
+  background-color: var(--PersianGreen);
+  height: 8vh;
+  position: fixed;
+  align-items: center;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+header {
+  top: 0;
+  justify-content: center;
+}
+
+footer {
+  bottom: 0;
+  justify-content: space-around;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 84vh;
+  justify-content: space-between;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Garamond';
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  display: grid;
+  grid-template: 1fr 50% / 1fr 1fr;
+  width: 100%;
+}
+
+
+/* font sizing */
+p .fa1 {
+  font-size: 120%;
+}
+p .fa2 {
+  font-size: 200%;
+}
+p .fa3 {
+  font-size: 250%;
+}
+p .fa4 {
+  font-size: 400%;
+}

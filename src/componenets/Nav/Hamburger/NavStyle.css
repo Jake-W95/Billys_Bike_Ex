@@ -1,0 +1,21 @@
+nav {
+    align-items: center;
+    width: 10rem;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    font-size: 150%;
+    padding-top: .8rem;
+    z-index: 2;
+}
+
+.linkContainer {
+    background-color: #122C2D;
+    width: 85%;
+    margin-bottom: .8rem;
+    padding: .5rem 0 .5rem;
+}
+
+.link {
+    color: white;
+}
