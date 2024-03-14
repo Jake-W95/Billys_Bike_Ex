@@ -21,7 +21,6 @@ function App() {
     setRefsInitialized(true)
   }, [])
   const scrollTo = (ref) => {
-    console.log(ref)
     ref.current.scrollIntoView({ behaviour: 'smooth' })
   }
   // console.log(pageRefs)

@@ -7,7 +7,7 @@ import stripDownImage from '../../Assets/Images/Images/B1.jpg'
 import miscServiceImage from '../../Assets/Images/bikes/bike_2.jpg'
 import generalServiceImage from '../../Assets/Images/Images/G2.png'
 import bespokeServiceImage from '../../Assets/Images/bikes/bike_3.jpg'
-export const Services = ({pageRef}) => {
+export const Services = ({ pageRef }) => {
 
     const [title, setTitle] = useState('')
     const [details, setDetails] = useState([])
@@ -88,13 +88,12 @@ export const Services = ({pageRef}) => {
     }
     return (
         <>
-            <section className="page" style={{ position: 'relative' }} ref={pageRef}>
-                <div id='serviceImageContainer' style={serviceImageContainerStyle}>
-                    <img src={servicesImage} alt='Services Header Image' style={{ width: '100vw', height: '100%', objectFit: 'cover' }} />
-                    <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}>
-                    </div>
-                </div>
-                <article>
+            <section className="page"  ref={pageRef}>
+                <img src={servicesImage}
+                    alt='Services Header Image'
+                    className='heroImage'
+                />
+                <article className='textContainer'>
                     <p className='kalam-regular' style={{ fontSize: '110%' }}>
                         At our workshop, we're all about using top-notch tools like <i>Park</i> and <i>Pedro's</i> <br />When it comes to keeping things squeaky clean, our trusty Muc Off 25L bio parts washer is our go-to for all our service work.
                     </p>

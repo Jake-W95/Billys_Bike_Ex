@@ -6,12 +6,16 @@
 }
 
 .App {
-  /* position: relative; */
   scroll-snap-type: y mandatory;
-  scroll-snap-stop:always;
+  scroll-snap-stop: always;
   scroll-padding-top: 8vh;
   font-family: Arial, Helvetica, sans-serif;
 
+
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 main {
@@ -20,8 +24,8 @@ main {
   margin-bottom: 8vh;
 
 }
-section
-article {
+
+section article {
   padding: 0 1.5em;
 }
 
@@ -57,10 +61,10 @@ footer {
   position: relative;
 }
 
-a {
+/* a {
   text-decoration: none;
   font-family: 'Garamond';
-}
+} */
 
 .row {
   display: flex;
@@ -70,23 +74,87 @@ a {
   display: flex;
   flex-direction: column;
 }
+
 .nav {
   display: grid;
-  grid-template: 1fr 50% / 1fr 1fr;
+  grid-template: repeat(2, 1fr) /repeat(2, 1fr);
   width: 100%;
+  height: 40%;
+  align-items: center;
 }
 
+.heroImage {
+  width: 100%
+}
+
+.textContainer {
+  justify-content: center;
+  display: flex;
+  flex-direction: column
+}
+
+.contactIcons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 3em;
+  padding: .5em 0;
+}
+
+.mapContainer {
+  width: 90vw;
+  height: 50vw;
+  margin-bottom: .5em;
+}
 
 /* font sizing */
-p .fa1 {
+.fa1 {
   font-size: 120%;
 }
-p .fa2 {
+
+.fa2 {
   font-size: 200%;
 }
-p .fa3 {
+
+.fa3 {
   font-size: 250%;
 }
-p .fa4 {
+
+.fa4 {
   font-size: 400%;
+}
+
+@media screen and (min-width: 610px) {
+  .page {
+    display: grid;
+    grid-template: repeat(2, 50%) / repeat(2, 50%);
+    background-color: white;
+    height: 84.1vh;
+  }
+
+  .heroImage {
+    height: 100%;
+  }
+
+  .textContainer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .nav {
+    height: 100%;
+    grid-column: 2/ 3;
+    grid-row: 1/2;
+  }
+
+  #serviceButtonContainer {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .mapContainer {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
 }

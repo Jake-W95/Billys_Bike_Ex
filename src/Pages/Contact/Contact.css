@@ -1,4 +1,4 @@
-#contactText{
+/* #contactText{
     width: 85%;
     font-size: larger;
 }
@@ -18,9 +18,15 @@
     height: 20%;
     margin-bottom: 1rem
 }
+*/
 
-@media screen and (min-width: 1000px) {
-    #contactContainer {
+/* 
+.page {
+    background-color: black;
+} */
+
+@media screen and (min-width: 500px) {
+    /* #contactContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -46,5 +52,7 @@
 
     #addressContainer p {
         font-size: larger;
-    }
-}
+    } */
+
+
+} 
