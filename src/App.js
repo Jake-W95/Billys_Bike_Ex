@@ -5,6 +5,7 @@ import Landing from './Pages/Landing/Landing';
 import { Services } from './Pages/Services/Services';
 import { Contact } from './Pages/Contact/Contact';
 import Footer from './componenets/Footer/Footer';
+import QuotePage from './Pages/QuotePage.js'
 
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
 import { useEffect, useRef, useState } from 'react';
@@ -28,15 +29,14 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Landing
-          scrollTo={scrollTo}
-          servicesRef={pageRefs.services}
-          contactRef={pageRefs.contact}
-        />
+        <Landing scrollTo={scrollTo} servicesRef={pageRefs.services} contactRef={pageRefs.contact} />
         {refsInitialized && (
+
           <>
+            <QuotePage int={0} />
             <Services
               pageRef={pageRefs.services} />
+            <QuotePage int={1} />
             <Contact
               pageRef={pageRefs.contact}
               fb={BsFacebook}

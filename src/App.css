@@ -129,7 +129,6 @@ footer {
   .page {
     display: grid;
     grid-template: repeat(2, 50%) / repeat(2, 50%);
-    background-color: white;
     height: 84.1vh;
   }
 
@@ -156,5 +155,15 @@ footer {
     height: 100%;
     width: 100%;
     margin: 0;
+  }
+  .quotePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: beige;
+  }
+  .quotePage p {
+    font-size: 190%;
+    margin: 0 2em;
   }
 }
