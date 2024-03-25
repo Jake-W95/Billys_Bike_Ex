@@ -55,14 +55,21 @@ footer {
   display: flex;
   flex-direction: column;
   height: 84vh;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   scroll-snap-align: start;
   position: relative;
 }
 .quotePage {
+  /* height: min-content; */
   background-color: beige;
-
+  display: flex;
+  flex-direction: column;
+  height: 84vh;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
 }
 
 /* a {
@@ -152,6 +159,9 @@ footer {
     grid-column: 2/ 3;
     grid-row: 1/2;
   }
+  /* .quotePage {
+    justify-content: center;
+  } */
 
   /* #serviceButtonContainer {
     grid-column: 2/3;

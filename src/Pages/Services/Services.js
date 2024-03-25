@@ -94,7 +94,7 @@ export const Services = ({ pageRef }) => {
                     className='heroImage'
                 />
                 <article className='textContainer'>
-                    <p className='kalam-regular' style={{ fontSize: '110%' }}>
+                    <p className='kalam-regular fa1' >
                         At our workshop, we're all about using top-notch tools like <i>Park</i> and <i>Pedro's</i> <br />When it comes to keeping things squeaky clean, our trusty Muc Off 25L bio parts washer is our go-to for all our service work.
                     </p>
                 </article>
