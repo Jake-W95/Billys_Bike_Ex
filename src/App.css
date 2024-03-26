@@ -118,6 +118,26 @@ footer {
   height: 50vw;
   margin-bottom: .5em;
 }
+.contactFormContainer {
+  position: absolute;
+  border: #00A896 solid 2px;
+  width: 85vw;
+  height: 60vw;
+   margin-top: 600;
+   padding: 1em;
+  justify-content: center;
+  /* align-items: center; */
+  background: white;
+}
+#formContainer {
+  width: 90%;
+  height: 90%;
+}
+
+textarea {
+  /* height: 80%; */
+  flex: 1;
+}
 
 /* font sizing */
 .fa1 {
@@ -159,16 +179,6 @@ footer {
     grid-column: 2/ 3;
     grid-row: 1/2;
   }
-  /* .quotePage {
-    justify-content: center;
-  } */
-
-  /* #serviceButtonContainer {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background-color: red;
-     width: 90%
-  } */
   .mapContainer {
     height: 100%;
     width: 100%;
@@ -178,10 +188,12 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: beige; */
   }
-  /* .quotePage p {
-    font-size: 190%;
-    margin: 0 2em;
-  } */
+  .contactFormContainer {
+    width: 25%;
+    height:35%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+  }
 }

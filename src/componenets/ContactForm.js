@@ -1,28 +1,22 @@
 import { useForm, ValidationError } from '@formspree/react';
 
 import '../Pages/Contact/Contact.css'
+import '../App.css'
 
 const ContactForm = (props) => {
-
-    console.log(props, 'contactFormProps')
-
     const [state, handleSubmit] = useForm('myyapynl');
     if (state.succeeded) {
         return <p>Thanks for joining!</p>;
     }
     const contactFormStyle = {
         display: props.displayContactForm,
+        // position: 'absolute',
+        // top: '12%',
+        // width: '85vw',
+        // height: '60vw',
+        // justifyContent: 'center',
         // alignItems: 'center',
-        position: 'absolute',
-        // left: 0,
-        top: '12%',
-        width: '85vw',
-        height: '60vw',
-        // marginTop: '600',
-        // padding: '1em',
-        justifyContent: 'center',
-        alignItems: 'center',
-        background: 'white',
+        // background: 'white',
     }
     const closeButtonStyle = {
         position: 'absolute',
@@ -38,11 +32,11 @@ const ContactForm = (props) => {
     if (props.formType === 'phone') {
         return (
             <>
-                <div className='contactFormContainer' style={contactFormStyle}>
+                <div className='contactFormContainer' style={{...contactFormStyle, alignItems: 'center' } }>
                     <div style={closeButtonStyle} onClick={() => props.setDisplayContactForm('none')}>x</div>
-                    <p className='.fa3'>
+                      <a href='tel:+07597932044' className='kalam-bold fa3'>
                         07597 932044
-                    </p>
+                      </a>
                 </div>
             </>
         )
@@ -53,10 +47,7 @@ const ContactForm = (props) => {
             <>
                 <div className='contactFormContainer' style={contactFormStyle}>
                     <div style={closeButtonStyle} onClick={() => props.setDisplayContactForm('none')}>x</div>
-                    {/* <p id='contactText'>If you have any questions or would like to book an appointment with me, you can email me or call me </p> */}
-                    <section id='formContainer' className='col'>
-                        {/* <h1>Send me an email...</h1> */}
-                        <form onSubmit={handleSubmit} className='col'>
+                        <form onSubmit={handleSubmit} className='col' id='contactForm' style={{width: '100%'}}>
                             <label htmlFor='email'>
                                 Your Email
                             </label>
@@ -86,7 +77,6 @@ const ContactForm = (props) => {
                                 Submit
                             </button>
                         </form>
-                    </section>
                 </div>
 
             </>

@@ -6,8 +6,6 @@ import { MdOutlineEmail, MdPhone } from 'react-icons/md'
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
 import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api'
 
-// import '../../App.css'
-// import './Contact.css'
 
 const libraries = []
 const center = {
