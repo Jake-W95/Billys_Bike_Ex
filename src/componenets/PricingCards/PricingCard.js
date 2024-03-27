@@ -7,7 +7,7 @@ export const PricingCard = (props) => {
     return (
         <>
             <div class='col' style={{ background: 'beige', width: '90%', height: '90%', position: 'relative', justifyContent: 'stretch' }}>
-                <h1 id="pricingCardTitle" className="kalam-bold" style={{ fontSize: '200%' }}>{props.title}</h1>
+                <h1 id="pricingCardTitle" className="kalam-bold fa3" style={{margin: '.2em'}} >{props.title}</h1>
                 <div id="closePricingCard" style={closePriceCardStyle} onClick={() => props.setShowCard('100%')}>
                     <FontAwesomeIcon icon={faChevronRight} size="2x" />
                 </div>
@@ -15,13 +15,13 @@ export const PricingCard = (props) => {
                     {
                         props.title != 'Bespoke Build' ?
                             props.details.map((detail, index) => (
-                                <li className='kalam-bold' style={{ fontSize: '110%' }} key={index}>{detail}</li>
+                                <li className='kalam-bold fa1'  key={index}>{detail}</li>
                             )) :
-                            <p className='kalam-regular' style={{ padding: '1em', fontSize: '120%' }}>{props.details}</p>
+                            <p className='kalam-regular fa1' style={{ padding: '1em' }}>{props.details}</p>
 
                     }
                 </ul>
-                <p className="kalam-bold" style={{ fontSize: '160%'}} >{props.price}</p>
+                <p className="kalam-bold fa2" style={{margin: 0}} >{props.price}</p>
             </div>
         </>
     )

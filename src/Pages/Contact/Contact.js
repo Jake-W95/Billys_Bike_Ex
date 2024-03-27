@@ -6,8 +6,6 @@ import { MdOutlineEmail, MdPhone } from 'react-icons/md'
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
 import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api'
 
-// import '../../App.css'
-// import './Contact.css'
 
 const libraries = []
 const center = {
@@ -52,7 +50,7 @@ export const Contact = ({ pageRef }) => {
                     </a>
                 </div>
                 <div id="addressContainer">
-                    <p className='kalam-regular'>  Billy's Bike Exchange &#169;<br />
+                    <p className='kalam-regular fa1'>  Billy's Bike Exchange &#169;<br />
                         Monarch House <br />
                         1 Smyth Road <br />
                         Bedminster, Bristol<br />
